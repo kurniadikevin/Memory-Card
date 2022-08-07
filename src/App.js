@@ -40,7 +40,7 @@ function App() {
         setSelected( (prev) => [...prev, targetSrc]);
         //alert('image src' +selected);
         if( selected.includes(targetSrc) ){
-          alert(`game over your score is ${score}`);
+          //alert(`game over your score is ${score}`);
           setBestScore(score);
           setScore(-1);
           setSelected([]);
