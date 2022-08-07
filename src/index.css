@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  height: 100vh;
+  border: 2px solid red;
+}
+
+  .head-row{
+    border: 2x solid red;
+    display: grid;
+    grid-template-rows: 3fr 2fr;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+
+      .title{
+        font-size: 20pt;
+        padding-top: 15px;
+      }
+
+  .main-row{
+    border: 2px solid red;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+    justify-content: center;
+  }
+      .img-row1, .img-row2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+
+      }
