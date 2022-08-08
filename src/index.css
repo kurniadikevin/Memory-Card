@@ -18,6 +18,16 @@ code {
   display: grid;
   grid-template-rows: 1fr 5fr;
   height: 100vh;
+  transition: background-color 10s ease-out;
+}
+
+img{
+  cursor:pointer;
+}
+
+
+ .App:hover{
+  background-color: navy;
 }
 
   .head-row{
