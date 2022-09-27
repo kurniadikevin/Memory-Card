@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(15,15,15);
+ /*  transition: background-color 5s ease-out; */
 }
 
 code {
@@ -13,22 +15,17 @@ code {
 }
 
 .App{
-  background-color: black;
+ /*  background-color: black; */
   color: white;
   display: grid;
   grid-template-rows: 1fr 5fr;
   height: 100vh;
-  transition: background-color 10s ease-out;
 }
 
 img{
   cursor:pointer;
 }
 
-
- .App:hover{
-  background-color: navy;
-}
 
   .head-row{
     display: grid;
@@ -51,7 +48,35 @@ img{
       .img-row1, .img-row2{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        
-        
+        gap: 20px; 
       }
+    
+    img:hover{
+      padding-top: 2px;
+    }
+  
+  @media(max-width: 600px){
+
+    body{
+      margin-left: 20px;
+      margin-right: 20px;
+    
+    }
+    .main-row{
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+     
+    }
+
+    .img-row1, .img-row2{
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px; 
+    }    
+
+    img{
+      height: 150px;
+      width: 150px;
+    }
+  }
